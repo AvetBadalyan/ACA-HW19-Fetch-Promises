@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Fetch</title>
   </head>
   <body>
@@ -14,10 +21,11 @@
         id="search"
         placeholder="Գրեք երկրի անունը..."
       />
-      <button type="submit">Որոնել</button>
+      <button type="submit" id="submitButton">Որոնել</button>
     </form>
-    <div id="CountryData"> 
-      <div class="topPart"> 
+    
+    <div id="CountryData">
+      <div class="topPart">
         <div class="capital">
           <p>Մայրաքաղաքը</p>
           <h2></h2>
@@ -35,11 +43,11 @@
           <h2></h2>
         </div>
       </div>
-      <div class="BottomPart"> 
-        <img />
+      <div class="BottomPart">
+        <img id="img" />
         <p>Պետական Դրոշը</p>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./fetch.js"></script>
   </body>
 </html>
