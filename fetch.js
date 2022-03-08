@@ -14,7 +14,7 @@ button.addEventListener("click", function (e) {
     .then((data) => {
       const { capital, population, region, flags, currencies } = data[0];
       Capital.innerHTML = capital;
-      Population.innerHTML = population;
+      Population.innerHTML = population.toLocaleString();
       Region.innerHTML = region;
       Flag.style.backgroundImage = flags.png;
       Img.src = flags.png;
@@ -22,7 +22,5 @@ button.addEventListener("click", function (e) {
       for (let key in currencies) {
         Currency.textContent = `${key} ${currencies[key].symbol}`;
       }
-
-      console.log(data);
     });
 });
